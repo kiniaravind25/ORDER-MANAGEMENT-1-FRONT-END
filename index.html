@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management - SSV Home Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>SSV Home Products</h1>
+            <p>Your one-stop shop for high-quality home products</p>
+        </header>
+        <main class="main-content">
+            <section class="order-form-section">
+                <h2>Create Order</h2>
+                <form id="order-form" class="order-form">
+                    <label for="userId">User ID:</label>
+                    <input type="number" id="userId" name="userId" required>
+
+                    <label for="items">Items :</label>
+                    <textarea id="items" name="items" rows="4" required></textarea>
+
+                    <button type="submit" class="btn">Create Order</button>
+                </form>
+            </section>
+
+            <section class="orders-list-section">
+                <h2>Orders</h2>
+                <button id="load-orders" class="btn">Load Orders</button>
+                <ul id="order-list" class="orders-list"></ul>
+            </section>
+
+            <section class="items-list-section">
+                <h2>Items</h2>
+                <button id="load-items" class="btn">Load Items</button>
+                <ul id="items-list" class="items-list"></ul>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>&copy; 2024 SSV Home Products</p>
+            <p>Address: Jodurasthe, Karkala </p>
+            <p>Phone: 9845286123</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
